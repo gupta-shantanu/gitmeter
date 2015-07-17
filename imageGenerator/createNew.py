@@ -4,7 +4,7 @@ def createNew(string):
     """
     creates image according to given information
     """
-    image=Image.open(r'C:\Users\H P\Documents\copy\programmer\frgit\gitmeter\imageGenerator\images.jpg').convert('RGBA')
+    image=Image.open('images.jpg').convert('RGBA')
 
     fnt = ImageFont.truetype("arial.ttf", 25)
     d = ImageDraw.Draw(image)
