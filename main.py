@@ -2,7 +2,7 @@ from flask import Flask,request,send_file
 from imageGenerator import gitinfo,createNew
 from io import BytesIO as byte
 app = Flask(__name__)
-
+app.debug=True
 @app.route('/')
 def blank():
     return '<h1>Want Some Badges? Nope not here........ :p</h1>'
