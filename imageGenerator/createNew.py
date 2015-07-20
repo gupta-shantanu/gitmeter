@@ -6,7 +6,7 @@ def createNew(string):
     """
     image=Image.open('imageGenerator/images/images.jpg').convert('RGBA')
 
-    fnt = ImageFont.truetype("arial.ttf", 25)
+    fnt = ImageFont.truetype("fonts/arial.ttf", 25)
     d = ImageDraw.Draw(image)
 
     d.text((10,10), string, font=fnt, fill=(255,255,255,128))
